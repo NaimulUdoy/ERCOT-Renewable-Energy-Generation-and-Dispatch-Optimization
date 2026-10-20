@@ -1,0 +1,32 @@
+B 3 C o m p i l a t i o n
+B 92 Equation Listing    SOLVE ercot_renewable_opt Using LP From line 70
+D 95 cost_obj
+D 102 power_balance
+D 113 wind_curtail_calc
+D 124 solar_curtail_calc
+B 136 Column Listing      SOLVE ercot_renewable_opt Using LP From line 70
+E 139 Z
+E 146 P_thermal
+E 168 P_wind
+E 187 P_solar
+E 206 Curtail_wind
+E 225 Curtail_solar
+B 245 Range Statistics    SOLVE ercot_renewable_opt Using LP From line 70
+B 256 Model Statistics    SOLVE ercot_renewable_opt Using LP From line 70
+B 269 Solution Report     SOLVE ercot_renewable_opt Using LP From line 70
+F 308 cost_obj
+F 312 power_balance
+F 682 wind_curtail_calc
+F 1052 solar_curtail_calc
+G 1424 Z
+G 1428 P_thermal
+G 3258 P_wind
+G 3628 P_solar
+G 3998 Curtail_wind
+G 4368 Curtail_solar
+B 4747 E x e c u t i o n
+I 4747 P_wind
+I 4755 P_solar
+I 4762 Curtail_wind
+I 4767 Curtail_solar
+I 4773 Z

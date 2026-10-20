@@ -1,0 +1,68 @@
+
+--- Job ERCOT 365-Day Net Renewable Generation & Dispatch Optimization.gms Start 10/20/26 15:25:02 51.4.0 91cb996b WEX-WEI x86 64bit/MS Windows
+--- Applying:
+    E:\GAMS\51\gmsprmNT.txt
+--- GAMS Parameters defined
+    Input "E:\New folder\ERCOT 365-Day Net Renewable Generation & Dispatch Optimization.gms"
+    PageSize 0
+    ScrDir "E:\New folder\225a\"
+    SysDir E:\GAMS\51\
+    LogOption 3
+    AppendLog 1
+    ErrMsg 1
+    ErrorLog 99
+    IDE 1
+    LstTitleLeftAligned 1
+Licensee: Naimul Islam Udoy                              G261020+0003Cc-GEN
+          0424062107@eee.buet.ac.bd                               FLP003633
+          225a\gamslice.dat
+          node:40250006 mem:8 cores:6 ipport:51097 v:2                     
+          Other time limited license
+          The expiration date of time-limited license is Oct 15, 2027
+System information: 6 physical cores and 8 Gb physical memory detected
+GAMS 51.4.0   Copyright (C) 1987-2025 GAMS Development. All rights reserved
+--- Starting compilation
+--- ERCOT 365-Day Net Renewable Generation & Dispatch Optimization.gms(82) 3 Mb
+--- Starting execution: elapsed 0:00:00.040
+--- ERCOT 365-Day Net Renewable Generation & Dispatch Optimization.gms(68) 4 Mb
+--- Generating LP model ercot_renewable_opt
+--- ERCOT 365-Day Net Renewable Generation & Dispatch Optimization.gms(70) 5 Mb
+---   1,096 rows  3,286 columns  6,571 non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 9.500E+00, 4.583E+04] - Zero values observed as well
+--- Bound     [min, max] : [ 9.500E+00, 2.000E+02] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.000E+00, 5.000E+01]
+--- Executing CBC (Solvelink=2): elapsed 0:00:00.101
+
+COIN-OR CBC      51.4.0 91cb996b Nov 10, 2025          WEI x86 64bit/MS Window
+
+COIN-OR Branch and Cut (CBC Library 2.10.11)
+written by J. Forrest
+
+Parallel mode: none, using 12 threads in linear algebra
+
+Calling CBC main solution routine...
+Analysis indicates model infeasible or unbounded
+Perturbing problem by 0.001% of 50 - largest nonzero change 4.0866204e-06 ( 1.3311061e-05%) - largest zero change 4.0852331e-06
+0  Obj 801175.07 Primal inf 15676750 (1095) Dual inf 364.99993 (730) w.o. free dual inf (0)
+96  Obj 801175.08 Primal inf 15673546 (999) Dual inf 316.99994 (634) w.o. free dual inf (0)
+192  Obj 801175.08 Primal inf 15671468 (903) Dual inf 268.99995 (538) w.o. free dual inf (0)
+288  Obj 801175.09 Primal inf 15669197 (807) Dual inf 220.99996 (442) w.o. free dual inf (0)
+384  Obj 801175.09 Primal inf 15665484 (711) Dual inf 172.99997 (346) w.o. free dual inf (0)
+480  Obj 801175.1 Primal inf 15659080 (615) Dual inf 124.99998 (250) w.o. free dual inf (0)
+576  Obj 801175.11 Primal inf 15653594 (519) Dual inf 76.999985 (154) w.o. free dual inf (0)
+672  Obj 801175.11 Primal inf 15650094 (423) Dual inf 28.999994 (58) w.o. free dual inf (0)
+768  Obj 32048176 Primal inf 15640190 (365)
+864  Obj 97960389 Primal inf 15621480 (365)
+960  Obj 1.6217216e+08 Primal inf 15602610 (365)
+1034  Obj 1.9407628e+08 Primal inf 15591980 (365)
+Primal infeasible - objective value 1.9407628e+08
+PrimalInfeasible objective 194076283.6 - 1034 iterations time 0.022
+
+Model infeasible.
+--- Reading solution for model ercot_renewable_opt
+--- Executing after solve: elapsed 0:00:00.339
+--- ERCOT 365-Day Net Renewable Generation & Dispatch Optimization.gms(82) 6 Mb
+--- Putfile results E:\New folder\ercot_365day_results_v2.csv
+*** Status: Normal completion
+--- Job ERCOT 365-Day Net Renewable Generation & Dispatch Optimization.gms Stop 10/20/26 15:25:02 elapsed 0:00:00.347
